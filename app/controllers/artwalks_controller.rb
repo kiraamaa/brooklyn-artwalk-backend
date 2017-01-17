@@ -54,6 +54,6 @@ class ArtwalksController < ApplicationController
     end
 
     def artwalk_params
-      params.require(:artwalk).permit(:title, :length, :tags => [])
+      params.require(:artwalk).permit(:title, :length, :points => [])
     end
 end

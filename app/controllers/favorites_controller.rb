@@ -19,6 +19,8 @@ class FavoritesController < ApplicationController
   # POST /favorites.json
   def create
     @favorite = Favorite.new(favorite_params)
+    @user = User.find_by id: params['user_id']
+    @artwalk = Artwalk.find_by id: params['artwalk_id']
 
     if @favorite.save
       render json: @favorite, status: :created, location: @favorite
@@ -54,6 +56,6 @@ class FavoritesController < ApplicationController
     end
 
     def favorite_params
-      params.require(:favorite).permit(:artwalk_id, :user_id)
+      params.require(:favorite).permit(:artwalk_id, :user_id, :title)
     end
 end

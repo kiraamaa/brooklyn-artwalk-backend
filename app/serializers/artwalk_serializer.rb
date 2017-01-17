@@ -1,3 +1,3 @@
 class ArtwalkSerializer < ActiveModel::Serializer
-  attributes :title, :length
+  attributes :title, :length, :id, :points
 end
