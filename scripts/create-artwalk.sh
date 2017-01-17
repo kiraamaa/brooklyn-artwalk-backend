@@ -1,1 +1,1 @@
-artwalk4 = Artwalk.create(title: 'Sculpture Saunter', length: '1.5 hours', tags: ['Real Fine Arts', 'Clearing'])
+artwalk4 = Artwalk.create(title: 'Sculpt', length: '1.5 hours', points: ['Real Arts', 'Other art'])
