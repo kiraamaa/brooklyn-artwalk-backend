@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :points, except: [:new, :edit]
+  resources :points, except: [:new, :edit]
   resources :favorites, except: [:new, :edit]
   resources :artwalks, except: [:new, :edit]
   resources :artwalks, except: [:new, :edit]
