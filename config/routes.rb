@@ -11,5 +11,7 @@ Rails.application.routes.draw do
   patch '/change-password/:id' => 'users#changepw'
   resources :users, only: [:index, :show]
 
+  get '/favorites', to: 'favorites#index'
+
   get '/artwalks', to: 'artwalks#index'
 end
