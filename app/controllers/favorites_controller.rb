@@ -6,7 +6,7 @@ class FavoritesController < ProtectedController
   end
 
   def favorite_params
-    params.require(:favorite).permit(:title)
+    params.require(:favorite).permit(:title, :artwalk_id)
   end
 
   # def edit_plate_params
